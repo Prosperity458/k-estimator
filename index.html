@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>K Estimator</title>
+  <style>
+    body { font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }
+    h1 { text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    input[type="number"] { width: 80px; }
+    button { margin-top: 20px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h1>K Estimator</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Вид робіт</th>
+        <th>Одиниця</th>
+        <th>Обсяг</th>
+        <th>Ціна для замовника</th>
+        <th>Ціна для працівника</th>
+        <th>Сума (замовник)</th>
+        <th>Сума (працівник)</th>
+      </tr>
+    </thead>
+    <tbody id="works-table"></tbody>
+  </table>
+  <div style="text-align: center;">
+    <button onclick="downloadExcel()">💾 Завантажити в Excel</button>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</body>
+</html>
